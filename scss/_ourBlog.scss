@@ -1,0 +1,82 @@
+.ourBlog{
+    &__title{
+        @include fluid(font-size, 26px, 30px);
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    &__description{
+        @include fluid(font-size, 13px, 14px);
+        color: #727272;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    &__wrapper{
+        @include fluid(gap, 30px, 45px);
+        display: flex;
+        flex-wrap: wrap;
+        & > *{
+            width: 22.3%;
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        &-img{
+            object-fit: cover;
+            height: 195px;
+            width: 100%;
+        }
+        &Wrapper{
+            padding: 12px 15px;
+            background-color: #FBFBFB;
+            &-date{
+                @include fluid(font-size, 13px, 14px);
+                font-weight: 500;
+                color: $mainColor;
+            }
+            &-title{
+                @include fluid(font-size, 18px, 20px);
+                font-weight: 500;
+            }
+            p{
+                @include fluid(font-size, 13px, 14px);
+                color: #727272;
+                margin-bottom: 10px;
+            }
+            a{
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                & > *{
+                    color: #3D3D3D;
+                    &::before{
+                        color: #3D3D3D;
+                    }
+                }
+                p{
+                    @include fluid(font-size, 13px, 14px);
+                    margin-bottom: 0;
+                }
+                &:hover{
+                    & > *{
+                        color: $mainColor;
+                        &::before{
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .ourBlog{
+        &__wrapper{
+            & > *{
+                width: 47.5%;
+            }
+        }
+    }
+}

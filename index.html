@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./plugins/noUiSlider/nouislider.min.css">
+    <link rel="stylesheet" href="./fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Index</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <img src="./img/Logo.svg" class="logo">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Plant Care</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </nav>
+                <div class="header__tools">
+                    <a href="#" class="icon icon-find"></a>
+                    <a href="#" class="header__tools-basketWrap">
+                        <div class="icon icon-basket"></div>
+                        <span>6</span>
+                    </a>
+                    <a href="#" class="btn">
+                        <img src="./img/icon/svg/Logout.svg">
+                        <p>Login</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="mainSwiper">
+        <div class="container">
+            <div class="mainSwiper__swiper swiper">
+                <div class="mainSwiper__wrapper swiper-wrapper">
+                    <div class="mainSwiper__slide swiper-slide">
+                        <div class="mainSwiper__subtitle">Welcome to GreenShop</div>
+                        <div class="mainSwiper__title">Let’s Make a Better <span>Planet</span></div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants 
+                            to create an unique Urban Jungle. Order your favorite plants!
+                        </p>
+                        <div class="btn">SHOP NOW</div>
+                        <img src="./img/mainSwiper.png" class="mainSwiper__img">
+                    </div>
+                    <div class="mainSwiper__slide swiper-slide">
+                        <div class="mainSwiper__subtitle">Welcome to GreenShop</div>
+                        <div class="mainSwiper__title">Let’s Make a Better <span>Planet</span></div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants 
+                            to create an unique Urban Jungle. Order your favorite plants!
+                        </p>
+                        <div class="btn">SHOP NOW</div>
+                        <img src="./img/mainSwiper.png" class="mainSwiper__img">
+                    </div>
+                    <div class="mainSwiper__slide swiper-slide">
+                        <div class="mainSwiper__subtitle">Welcome to GreenShop</div>
+                        <div class="mainSwiper__title">Let’s Make a Better <span>Planet</span></div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants 
+                            to create an unique Urban Jungle. Order your favorite plants!
+                        </p>
+                        <a href="#" class="btn">SHOP NOW</a>
+                        <img src="./img/mainSwiper.png" class="mainSwiper__img">
+                    </div>
+                </div>
+                <div class="mainSwiper__pagination swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="plants">
+        <div class="container">
+            <div class="plants__wrapper">
+                <div class="plants__filter">
+                    <div class="filter">
+                        <div class="filter__check filPar">
+                            <div class="filter__flex filAcc">
+                                <p>Categories</p>
+                            </div>
+                            <div class="filter__choise">
+                                <label class="filter__choiseLabel active">
+                                    <p>House Plants</p>
+                                    <span>(33)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Potter Plants</p>
+                                    <span>(12)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Seeds</p>
+                                    <span>(65)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Small Plants</p>
+                                    <span>(39)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Big Plants</p>
+                                    <span>(23)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Succulents</p>
+                                    <span>(17)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Trerrariums</p>
+                                    <span>(19)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Gardening</p>
+                                    <span>(13)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Accessories</p>
+                                    <span>(18)</span>
+                                </label>
+                                <div class="filter__choiseShowHihhen">Показать ещё</div>
+                            </div>
+                        </div>
+                        <div class="filter__price filPar">
+                            <div class="filter__flex filAcc">
+                                <p>Price Range</p>
+                            </div>
+                            <div class="filter__noUiWrap">
+                                <div id="slider"></div>
+                                <div class="filter__noUiWrap-value">
+                                    <p>Price:</p>
+                                    <p class="min"></p>
+                                    <span> - </span>
+                                    <p class="max"></p>
+                                </div>
+                                <div class="btn">Filter</div>
+                            </div>
+                        </div>
+                        <div class="filter__check filPar">
+                            <div class="filter__flex filAcc">
+                                <p>Size</p>
+                            </div>
+                            <div class="filter__choise">
+                                <label class="filter__choiseLabel">
+                                    <p>Small</p>
+                                    <span>(119)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Medium</p>
+                                    <span>(86)</span>
+                                </label>
+                                <label class="filter__choiseLabel">
+                                    <p>Large</p>
+                                    <span>(78)</span>
+                                </label>
+                                <div class="filter__choiseShowHihhen">Показать ещё</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/superSale.png" class="plants__filter-sale">
+                </div>
+                <div class="plants__cardWrapper">
+                    <div class="plants__sortWrapper">
+                        <div class="plants__sortWrapper-item active">All Plants</div>
+                        <div class="plants__sortWrapper-item">New Arrivals</div>
+                        <div class="plants__sortWrapper-item">Sale</div>
+                        <div class="plants__sort">
+                            <p>Short by:</p>
+                            <p class="typeSorting">Default sorting</p>
+                            <div class="plants__sortList">
+                                <div class="plants__sortList-item">sort1</div>
+                                <div class="plants__sortList-item">sort2</div>
+                                <div class="plants__sortList-item">sort3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <img src="./img/pl1.png" class="card__img-plant">
+                            <div class="card__tools">
+                                <div class="card__tools-item icon-basket">
+                                </div>
+                                <div class="card__tools-item icon-like">
+                                </div>
+                                <div class="card__tools-item icon-find">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__title">Barberton Daisy</div>
+                        <div class="card__price">$119.00</div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <img src="./img/pl2.png" class="card__img-plant">
+                            <div class="card__tools">
+                                <div class="card__tools-item icon-basket">
+                                </div>
+                                <div class="card__tools-item icon-like">
+                                </div>
+                                <div class="card__tools-item icon-find">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__title">Barberton Daisy</div>
+                        <div class="card__price">$119.00</div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <span>13% OFF</span>
+                            <img src="./img/pl3.png" class="card__img-plant">
+                            <div class="card__tools">
+                                <div class="card__tools-item icon-basket">
+                                </div>
+                                <div class="card__tools-item icon-like">
+                                </div>
+                                <div class="card__tools-item icon-find">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__title">Barberton Daisy</div>
+                        <div class="card__price">$119.00</div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <img src="./img/pl4.png" class="card__img-plant">
+                            <div class="card__tools">
+                                <div class="card__tools-item icon-basket">
+                                </div>
+                                <div class="card__tools-item icon-like">
+                                </div>
+                                <div class="card__tools-item icon-find">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__title">Barberton Daisy</div>
+                        <div class="card__price">$119.00</div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <span>13% OFF</span>
+                            <img src="./img/pl5.png" class="card__img-plant">
+                            <div class="card__tools">
+                                <div class="card__tools-item icon-basket">
+                                </div>
+                                <div class="card__tools-item icon-like">
+                                </div>
+                                <div class="card__tools-item icon-find">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__title">Barberton Daisy</div>
+                        <div class="card__price">$119.00</div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <span>13% OFF</span>
+                            <img src="./img/pl6.png" class="card__img-plant">
+                            <div class="card__tools">
+                                <div class="card__tools-item icon-basket">
+                                </div>
+                                <div class="card__tools-item icon-like">
+                                </div>
+                                <div class="card__tools-item icon-find">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__title">Barberton Daisy</div>
+                        <div class="card__price">$119.00</div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <img src="./img/pl7.png" class="card__img-plant">
+                            <div class="card__tools">
+                                <div class="card__tools-item icon-basket">
+                                </div>
+                                <div class="card__tools-item icon-like">
+                                </div>
+                                <div class="card__tools-item icon-find">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__title">Barberton Daisy</div>
+                        <div class="card__price">$119.00</div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <span>13% OFF</span>
+                            <img src="./img/pl8.png" class="card__img-plant">
+                            <div class="card__tools">
+                                <div class="card__tools-item icon-basket">
+                                </div>
+                                <div class="card__tools-item icon-like">
+                                </div>
+                                <div class="card__tools-item icon-find">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__title">Barberton Daisy</div>
+                        <div class="card__price">$119.00</div>
+                    </a>
+                    <a href="#" class="card">
+                        <div class="card__img">
+                            <img src="./img/pl9.png" class="card__img-plant">
+                            <div class="card__tools">
+                                <div class="card__tools-item icon-basket">
+                                </div>
+                                <div class="card__tools-item icon-like">
+                                </div>
+                                <div class="card__tools-item icon-find">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__title">Barberton Daisy</div>
+                        <div class="card__price">$119.00</div>
+                    </a>
+                    <div class="plants__pagination">
+                        <a href="#" class="plants__pagination-item active">1</a>
+                        <a href="#" class="plants__pagination-item">2</a>
+                        <a href="#" class="plants__pagination-item">3</a>
+                        <a href="#" class="plants__pagination-item">4</a>
+                        <a href="#" class="plants__pagination-item">
+                            <img src="./img/icon/svg/Arrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="findMore">
+        <div class="container">
+            <div class="findMore__wrapper">
+                <div class="findMore__card">
+                    <img src="./img/pl5.png" class="findMore__card-img">
+                    <div class="findMore__cardWrapper">
+                        <div class="findMore__card-title">Summer cactus & succulents</div>
+                        <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
+                        <div class="btn">
+                            <p>Find More</p>
+                            <div class="icon icon-ArrowRight"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="findMore__card">
+                    <img src="./img/pl3.png" class="findMore__card-img">
+                    <div class="findMore__cardWrapper">
+                        <div class="findMore__card-title">Styling Trends & much more</div>
+                        <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
+                        <div class="btn">
+                            <p>Find More</p>
+                            <div class="icon icon-ArrowRight"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ourBlog">
+        <div class="container">
+            <div class="ourBlog__title">Our Blog Posts</div>
+            <div class="ourBlog__description">We are an online plant shop offering a wide range of cheap and trendy plants.</div>
+            <div class="ourBlog__wrapper">
+                <div class="ourBlog__card">
+                    <img src="./img/ourBlog1.png" class="ourBlog__card-img">
+                    <div class="ourBlog__cardWrapper">
+                        <div class="ourBlog__cardWrapper-date">September 12  I Read in 6 minutes</div>
+                        <div class="ourBlog__cardWrapper-title">Cactus & Succulent Care Tips</div>
+                        <p>
+                            Cacti are succulents are easy care plants for any home or patio. 
+                        </p>
+                        <a href="#">
+                            <p>Read More</p>
+                            <div class="icon icon-ArrowRight"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="ourBlog__card">
+                    <img src="./img/ourBlog2.png" class="ourBlog__card-img">
+                    <div class="ourBlog__cardWrapper">
+                        <div class="ourBlog__cardWrapper-date">September 13  I Read in 2 minutes</div>
+                        <div class="ourBlog__cardWrapper-title">Top 10 Succulents for Your Home</div>
+                        <p>
+                            Best in hanging baskets. Prefers medium to high light.
+                        </p>
+                        <a href="#">
+                            <p>Read More</p>
+                            <div class="icon icon-ArrowRight"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="ourBlog__card">
+                    <img src="./img/ourBlog3.png" class="ourBlog__card-img">
+                    <div class="ourBlog__cardWrapper">
+                        <div class="ourBlog__cardWrapper-date">September 15  I Read in 3 minutes</div>
+                        <div class="ourBlog__cardWrapper-title">Cacti & Succulent Care Tips</div>
+                        <p>
+                            Cacti and succulents thrive in containers and because most are..
+                        </p>
+                        <a href="#">
+                            <p>Read More</p>
+                            <div class="icon icon-ArrowRight"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="ourBlog__card">
+                    <img src="./img/ourBlog4.png" class="ourBlog__card-img">
+                    <div class="ourBlog__cardWrapper">
+                        <div class="ourBlog__cardWrapper-date">September 15  I Read in 2 minutes</div>
+                        <div class="ourBlog__cardWrapper-title">Best Houseplants Room by Room</div>
+                        <p>
+                            The benefits of houseplants are endless. In addition to..
+                        </p>
+                        <a href="#">
+                            <p>Read More</p>
+                            <div class="icon icon-ArrowRight"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__wrapper">
+                <div class="feedback__infoWrapper">
+                    <div class="feedback__info">
+                        <img src="./img/feedback1.svg">
+                        <div class="feedback__info-title">Garden Care</div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                    <div class="feedback__info">
+                        <img src="./img/feedback2.svg">
+                        <div class="feedback__info-title">Plant Renovation</div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                    <div class="feedback__info">
+                        <img src="./img/feedback3.svg">
+                        <div class="feedback__info-title">Watering Graden</div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                </div>
+                <form class="feedback__form">
+                    <div class="feedback__form-title">
+                        Would you like to join newsletters?
+                    </div>
+                    <div class="feedback__formWrapper">
+                        <input type="email" placeholder="enter your email address...">
+                        <div class="btn">Join</div>
+                    </div>
+                    <p>
+                        We usually post offers and challenges in newsletter. We’re your online 
+                        houseplant destination. We offer a wide range of houseplants and accessories 
+                        shipped directly from our (green)house to yours! 
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <img src="./img/Logo.svg" class="logo">
+                    <div class="footer__top-item">
+                        <img src="./img/icon/svg/Location.svg">
+                        <p>
+                            70 West Buckingham Ave. Farmingdale, NY 11735
+                        </p>
+                    </div>
+                    <a href="mailto: contact@greenshop.com" class="footer__top-item">
+                        <img src="./img/icon/svg/Mail.svg">
+                        <p>
+                            contact@greenshop.com
+                        </p>
+                    </a>
+                    <a href="tel: +88 01911 717 490" class="footer__top-item">
+                        <img src="./img/icon/svg/Calling.svg">
+                        <p>
+                            +88 01911 717 490
+                        </p>
+                    </a>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottomWrapper">
+                        <div class="footer__bottomItem">
+                            <div class="footer__bottomItem-title">My Account</div>
+                            <a href="#">My Account</a>
+                            <a href="#">Our stores</a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Career</a>
+                            <a href="#">Specials</a>
+                        </div>
+                        <div class="footer__bottomItem">
+                            <div class="footer__bottomItem-title">Help & Guide</div>
+                            <a href="#">Help Center</a>
+                            <a href="#">How to Buy</a>
+                            <a href="#">Shipping & Delivery</a>
+                            <a href="#">Product Policy</a>
+                            <a href="#">How to Return</a>
+                        </div>
+                        <div class="footer__bottomItem">
+                            <div class="footer__bottomItem-title">Categories</div>
+                            <a href="#">House Plants</a>
+                            <a href="#">Potter Plants</a>
+                            <a href="#">Seeds</a>
+                            <a href="#">Small Plants</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                    </div>
+                    <div class="footer__bottomItem">
+                        <div class="footer__bottomItem-title">Social Media</div>
+                        <div class="footer__socials">
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Facebook"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Instagram"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Twitter"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Linkedin"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Union"></div>
+                            </a>
+                        </div>
+                        <div class="footer__bottomItem-title">We accept</div>
+                        <div class="footer__pay">
+                            <img src="./img/pay.png" alt="" class="footer__pay-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="./plugins/wNumb/wNumb.min.js"></script>
+    <script src="./plugins/noUiSlider/nouislider.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

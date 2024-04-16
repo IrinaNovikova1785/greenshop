@@ -1,0 +1,74 @@
+.findMore{
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        & > *{
+            width: 48.6%;
+        }
+    }
+    &__card{
+        @include fluid(padding-top, 30px, 37px);
+        @include fluid(padding-bottom, 35px, 46px);
+        @include fluid(padding-left, 210px, 270px);
+        position: relative;
+        display: flex;
+        justify-content: right;
+        padding-right: 30px;
+        background-image: url('../img/findMore_bg.svg');
+        background-color: #FBFBFB;
+        background-position: left;
+        background-repeat: no-repeat;
+        &Wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            p{
+                @include fluid(font-size, 13px, 14px);
+                color: #727272;
+                max-width: 292px;
+                text-align: right;
+                margin-bottom: 25px;
+            }
+            .btn{
+                p{
+                    color: #FFF;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &-img{
+            @include fluid(height, 250px, 290px);
+            position: absolute;
+            left: 2%;
+            top: 35%;
+            translate: 0% -50%;
+            object-fit: contain;
+        }
+        &-title{
+            @include fluid(font-size, 16px, 18px);
+            font-weight: 700;
+            line-height: 120%;
+            text-transform: uppercase;
+            max-width: 150px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .findMore{
+        &__card{
+            width: 48.4%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .findMore{
+        &__card{
+            width: 100%;
+        }
+    }
+}

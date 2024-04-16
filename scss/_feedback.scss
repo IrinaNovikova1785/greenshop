@@ -1,0 +1,74 @@
+.feedback{
+    margin-bottom: 0;
+    &__wrapper{
+        @include fluid(gap, 30px, 60px);
+        display: flex;
+        background-color: #FBFBFB;
+        padding: 25px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &Wrapper{
+            display: flex;
+            width: 65%;
+        }
+        &-title{
+            @include fluid(font-size, 16px, 18px);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        img{
+            object-fit: contain;
+            height: 94px;
+            margin-bottom: 17px;
+        }
+        p{
+            @include fluid(font-size, 13px, 14px);
+            color: #727272;
+            max-width: 204px;
+        }
+        &:not(&:last-child){
+            padding-right: 35px;
+            border-right: 1px solid $opacityMainColor;
+        }
+        &:not(&:first-child){
+            padding-left: 35px;
+        }
+    }
+    &__form{
+        width: 30%;
+        &-title{
+            @include fluid(font-size, 16px, 18px);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        &Wrapper{
+            display: flex;
+            margin-bottom: 17px;
+            input{
+                width: 100%;
+                padding: 12px 11px;
+            }
+            .btn{
+                border-radius: 0 6px 6px 0;
+            }
+        }
+        p{
+            @include fluid(font-size, 13px, 14px);
+            color: #727272;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .feedback{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__infoWrapper, &__form{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.mainSwiper{
+    @include fluid(margin-bottom, 30px, 60px);
+    margin-top: 15px;
+    &__slide{
+        @include fluid(padding-top, 30px, 68px);
+        @include fluid(padding-bottom, 40px, 85px);
+        @include fluid(padding-left, 30px, 43px);
+        @include fluid(padding-right, 30px, 43px);
+        position: relative;
+        display: flex;
+        gap: 7px;
+        flex-direction: column;
+        background-color: #F5F5F580;
+    }
+    &__subtitle, &__title, .btn{
+        text-transform: uppercase;
+    }
+    &__subtitle{
+        @include fluid(font-size, 13px, 14px);
+    }
+    &__title{
+        @include fluid(font-size, 45px, 70px);
+        @include fluid(max-width, 400px, 530px);
+        font-weight: 700;
+        line-height: 100%;
+        span{
+            color: $mainColor;
+        }
+    }
+    &__img{
+        @include fluid(height, 320px, 500px);
+        position: absolute;
+        right: 0;
+        top: 49%;
+        translate: 0% -50%;
+        object-fit: contain;
+    }
+    &__pagination{
+        .swiper-pagination-bullet{
+            background: $mainColor;
+        }
+    }
+    p{
+        @include fluid(font-size, 13px, 14px);
+        @include fluid(max-width, 357px, 557px);
+    }
+    .btn{
+        @include fluid(margin-top, 30px, 40px);
+    }
+}
+
+@media (max-width: 768px){
+    .mainSwiper{
+        &__img{
+            height: 280px;
+            right: -5%;
+        }
+        &__title{
+            font-size: 29px;
+            max-width: 300px;
+        }
+        p{
+            max-width: 277px;
+        }
+    }
+    .nav{
+        position: absolute;
+        transform: translateY(-200%);
+        ul li a{
+            &.active{
+                border-color: transparent;
+            }
+        }
+    }
+}
