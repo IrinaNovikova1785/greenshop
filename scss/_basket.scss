@@ -1,0 +1,108 @@
+.basket{
+    &__wrapper{
+        @include fluid(gap, 40px, 90px);
+        display: flex;
+    }
+    &__products{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 70%;
+        &Top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding-right: 25px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #46A35880;
+            p{
+                font-weight: 600;
+            }
+        }
+        &Item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FBFBFB;
+            padding-right: 25px;
+            img{
+                object-fit: contain;
+                height: 70px;
+                width: 70px;
+            }
+            &-img{
+                display: flex;
+                align-items: center;
+            }
+            &-quantity{
+                display: flex;
+                gap: 23px;
+                align-items: center;
+                margin-right: 15px;
+                .minus, .plus{
+                    @include fluid(font-size, 16px, 19px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFF;
+                    border-radius: 50%;
+                    background-color: $mainColor;
+                    width: 21px;
+                    height: 25px;
+                }
+            }
+            &-total{
+                font-weight: 700;
+                color: $mainColor;
+            }
+        }
+    }
+    &__total{
+        width: 30%;
+        &-title{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #46A35880;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .feedback{
+            margin-top: 5px;
+            margin-bottom: 30px;
+            input{
+                border: 1px solid $mainColor;
+            }
+        }
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        &-endPrice{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            p{
+                font-weight: 700;
+                margin: 0;
+                color: $mainColor;
+            }
+        }
+        .btn{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .basket{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__products, &__total{
+            width: 100%;
+        }
+    }
+}

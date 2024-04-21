@@ -87,3 +87,15 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .footer{
+        &__bottom{
+            flex-direction: column;
+            gap: 20px;
+            &Wrapper, .footer__bottomItem{
+                width: 100%;
+            }
+        }
+    }
+}

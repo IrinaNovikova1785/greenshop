@@ -8,7 +8,64 @@ window.addEventListener("DOMContentLoaded", () => {
               },
         })
     }
+    
+    let cardDetailSwiper = document.querySelector('.cardDetail__swiper');
 
+    if(cardDetailSwiper){
+
+      let cardDetailSwiperTh = document.querySelector('.cardDetail__swiperTh');
+    
+      let swiper2 = new Swiper(cardDetailSwiperTh, {
+          slidesPerView: 4,
+          direction: 'vertical',
+          spaceBetween: 15,
+      })
+
+        let swiper = new Swiper(cardDetailSwiper, {
+            slidesPerView: 1,
+            direction: 'vertical',
+            thumbs: {
+              swiper: swiper2,
+            }
+        })
+    }
+
+    let reletedProductsSwiper = document.querySelector('.reletedProducts__swiper');
+
+    if(reletedProductsSwiper){
+
+      let swiper = new Swiper(reletedProductsSwiper, {
+          slidesPerView: 5,
+          spaceBetween: 25,
+          pagination: {
+            el: '.reletedProducts__pagination',
+          }, breakpoints: {
+            992: {
+              slidesPerView: 5,
+              spaceBetween: 25,
+            }, 
+            768: {
+              slidesPerView: 2.5,
+              spaceBetween: 25,
+            },
+          }
+      })
+    }
+
+
+    let arrGallery = ['.cardDetail__swiperSlide'];
+
+    function initGallery(){
+        for(let i = 0; i < arrGallery.length; i++){
+            if (document.querySelector(arrGallery[i])) {
+                Fancybox.bind(arrGallery[i], {
+                    groupAll: true,
+                })
+            }
+        }
+    }
+
+    initGallery()
 
     let plantsSort = document.querySelector('.plants__sort');
 
@@ -106,5 +163,63 @@ window.addEventListener("DOMContentLoaded", () => {
           })
 
         })
-      }
+    }
+
+    function tabs(dataTab, dataInfo, className){
+      let targetMap1 = document.querySelectorAll(`[${dataTab}]`),
+          map1 = document.querySelectorAll(`.${className}`)
+
+      targetMap1?.forEach(elem => {
+          elem.addEventListener('click', function (e) {
+              e.preventDefault()
+              let target = this.getAttribute(`${dataTab}`)
+              map1.forEach(elem => {
+                  elem.classList.remove(`${className}--opacity`, `${className}--display`)
+              })
+
+              targetMap1.forEach(elem => {
+                  elem.classList.remove('active')
+              })
+              this.classList.add('active')
+
+              let cat = document.querySelectorAll(`[${dataInfo}='${target}']`)
+
+              cat.forEach(elem => {
+                  elem.classList.add(`${className}--display`)
+                  console.log(elem.className);
+                  setTimeout(() => {
+                      elem.classList.add(`${className}--opacity`)
+                  }, 400)
+              })
+          })
+      })
+  }
+
+  if(document.querySelector('.prodDescription__wrapper')){
+      tabs('data-tabp', 'data-infop', 'prodDescription__wrapper');
+  }
+
+
+  $(document).ready(function() {
+    $('.townSelect').select2({
+      placeholder: 'Select a country / region',
+    });
+  });
+  $(document).ready(function() {
+    $('.stateSelect').select2({
+      placeholder: 'Select a state',
+    });
+  });
+
+
+    
+  const phone = document.querySelectorAll('[name="phone"]')
+  if (phone) {
+      phone.forEach(element => {
+          const maskOptions = {
+              mask: '+{7}(000) 000-00-00',
+          }
+          const mask = IMask(element, maskOptions)
+      })
+  }
 })

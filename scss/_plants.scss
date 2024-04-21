@@ -43,6 +43,7 @@
             &-item{
                 @include fluid(font-size, 14px, 16px);
                 border-bottom: 2px solid transparent;
+                cursor: pointer;
                 &.active{
                     color: $mainColor;
                     border-color: $mainColor;
@@ -211,6 +212,22 @@
     .card{
         &__tools{
             transform: translateY(0%);
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .plants{
+        &__cardWrapper{
+            .card{
+                width: 100%;
+            }
+        }
+        &__sortWrapper{
+            flex-wrap: wrap;
+            .plants__sort{
+                width: 100%;
+            }
         }
     }
 }

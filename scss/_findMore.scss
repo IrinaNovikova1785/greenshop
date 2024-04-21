@@ -72,3 +72,17 @@
         }
     }
 }
+
+@media (max-width: 530px) {
+    .findMore{
+        &__card{
+            &-img{
+                height: 200px;
+                top: 55%;
+            }
+            &-title{
+                max-width: unset;
+            }
+        }
+    }
+}

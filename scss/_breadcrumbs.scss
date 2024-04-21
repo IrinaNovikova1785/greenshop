@@ -1,0 +1,20 @@
+.breadcrumbs{
+    margin-top: 35px;
+    margin-bottom: 45px;
+    &__wrapper{
+        a{
+            &:first-child{
+                font-weight: 800;
+            }
+            &:not(&:last-child){
+                position: relative;
+                margin-right: 2px;
+                &::after{
+                    content: '/';
+                    font-size: 14px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

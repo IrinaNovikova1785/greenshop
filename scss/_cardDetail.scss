@@ -1,0 +1,147 @@
+.cardDetail{
+    @include fluid(margin-bottom, 60px, 92px);
+    &__wrapper{
+        @include fluid(gap, 30px, 50px);
+        display: flex;
+        & > *{
+            width: 50%;
+        }
+    }
+    &__swiper{
+        width: 100%;
+        &Slide{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FBFBFB;
+            img{
+                object-fit: contain;
+                height: 400px;
+            }
+            span{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 30px;
+                height: 30px;
+                background-color: #FFF;
+                border-radius: 50%;
+            }
+        }
+        &Container{
+            display: flex;
+            gap: 30px;
+            height: 100%;
+            max-height: 583px;
+        }
+        &Th{
+            flex-shrink: 0;
+            width: 20%;
+            &Slide{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                height: 100px;
+                background-color: #FBFBFB;
+                img{
+                    object-fit: contain;
+                    height: 90px;
+                }
+            }
+            .swiper-slide-thumb-active{
+              border: 1px solid $mainColor;  
+            }
+        }
+    }
+    &__title{
+        @include fluid(font-size, 22px, 28px);
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__price{
+        @include fluid(font-size, 18px, 22px);
+        font-weight: 700;
+        color: $mainColor;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #46A35880;
+    }
+    &__description{
+        margin-bottom: 25px;
+        &-title{
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.3;
+            color: #727272;
+        }
+    }
+    &__size{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+        &-title{
+            width: 100%;
+        }
+        &-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            width: 28px;
+            height: 28px;   
+            border-radius: 50%;
+            border: 1px solid #EAEAEA;
+            transition: .38s ease-in-out;
+            &.active, &:hover{
+                border-color: $mainColor;
+                color: $mainColor;
+                font-weight: 600;
+            }
+        }
+    }
+    &__tools{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+        &-quantity{
+            display: flex;
+            gap: 23px;
+            align-items: center;
+            margin-right: 15px;
+            .minus, .plus{
+                @include fluid(font-size, 22px, 28px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFF;
+                border-radius: 50%;
+                background-color: $mainColor;
+                width: 33px;
+                height: 38px;
+            }
+        }
+        .btn:has(.icon){
+            padding: 10px;
+        }
+    }
+    &__articul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &-item{
+            color: #727272;
+        }
+        .footer{
+            margin-top: 10px;
+        }
+    }
+}

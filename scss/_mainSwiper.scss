@@ -73,3 +73,14 @@
         }
     }
 }
+
+@media (max-width: 530px) {
+    .mainSwiper{
+        &__img{
+            display: none;
+        }
+        &__title, p{
+            max-width: unset;
+        }
+    }
+}

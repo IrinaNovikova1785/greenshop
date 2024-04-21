@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./plugins/noUiSlider/nouislider.min.css">
+    <link rel="stylesheet" href="./plugins/fancybox/fancybox.css">
+    <link rel="stylesheet" href="./plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="./fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <img src="./img/Logo.svg" class="logo">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">Shop</a></li>
+                        <li><a href="#">Plant Care</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </nav>
+                <div class="header__tools">
+                    <a href="#" class="icon icon-find"></a>
+                    <a href="#" class="header__tools-basketWrap">
+                        <div class="icon icon-basket"></div>
+                        <span>6</span>
+                    </a>
+                    <a href="#" class="btn">
+                        <img src="./img/icon/svg/Logout.svg">
+                        <p>Login</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__wrapper">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Checkout</a>
+            </div>
+        </div>
+    </section>
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout__wrapper">
+                <div class="checkout__address">
+                    <div class="checkout__title">Billing Address</div>
+                    <form class="checkout__form">
+                        <label>
+                            <p>First Name <b>*</b></p>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <p>Last Name <b>*</b></p>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <p>Country / Region <b>*</b></p>
+                            <select class="townSelect" name="state">
+                                <option></option>
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </label>
+                        <label>
+                            <p>Town / City <b>*</b></p>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <p>Street Address <b>*</b></p>
+                            <input type="text" placeholder="House number and street name">
+                        </label>
+                        <label>
+                            <input type="text" placeholder="Appartment, suite, unit, etc. (optional)">
+                        </label>
+                        <label>
+                            <p>State <b>*</b></p>
+                            <select class="stateSelect" name="state">
+                                <option></option>
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </label>
+                        <label>
+                            <p>Zip <b>*</b></p>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <p>Email address <b>*</b></p>
+                            <input type="email">
+                        </label>
+                        <label>
+                            <p>Phone Number <b>*</b></p>
+                            <input type="text" name="phone" placeholder="+7 (901)-222-22-22">
+                        </label>
+                        <label>
+                            <input type="radio">
+                            <span></span>
+                            <p>Ship to a different address?</p>
+                        </label>
+                        <label>
+                            <p>Order notes (optional)</p>
+                            <textarea cols="30" rows="10"></textarea>
+                        </label>
+                    </form>
+                </div>
+                <div class="checkout__order">
+                    <div class="checkout__title">Your Order</div>
+                    <div class="checkout__subtitle">
+                        <p>Products</p>
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="basket">
+                        <div class="basket__productsItem">
+                            <div class="basket__productsItem-img">
+                                <img src="./img/pl1.png">
+                                <div class="basket__productsItem-text">
+                                    <div class="basket__productsItem-title">Barberton Daisy</div>
+                                    <div class="basket__productsItem-articul">SKU: <b>1995751877966</b></div>
+                                </div>
+                            </div>
+                            <div class="basket__productsItem-price">(x 2)</div>
+                            <div class="basket__productsItem-total">$238.00</div>
+                        </div>
+                        <div class="basket__productsItem">
+                            <div class="basket__productsItem-img">
+                                <img src="./img/pl2.png">
+                                <div class="basket__productsItem-text">
+                                    <div class="basket__productsItem-title">Barberton Daisy</div>
+                                    <div class="basket__productsItem-articul">SKU: <b>1995751877966</b></div>
+                                </div>
+                            </div>
+                            <div class="basket__productsItem-price">(x 2)</div>
+                            <div class="basket__productsItem-total">$238.00</div>
+                        </div>
+                        <div class="basket__productsItem">
+                            <div class="basket__productsItem-img">
+                                <img src="./img/pl3.png">
+                                <div class="basket__productsItem-text">
+                                    <div class="basket__productsItem-title">Barberton Daisy</div>
+                                    <div class="basket__productsItem-articul">SKU: <b>1995751877966</b></div>
+                                </div>
+                            </div>
+                            <div class="basket__productsItem-price">(x 2)</div>
+                            <div class="basket__productsItem-total">$238.00</div>
+                        </div>
+                        <div class="basket__total">
+                            <p>Subtotal <b>$2,683.00</b></p>
+                            <p>Coupon Discount <b>(-) 00.00</b></p>
+                            <p>Shiping <b>$16.00</b></p>
+                            <div class="basket__total-endPrice">
+                                <b>Total</b>
+                                <p>$2,699.00</p>
+                            </div>
+                            <div class="btn">Proceed To Checkout</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__wrapper">
+                <div class="feedback__infoWrapper">
+                    <div class="feedback__info">
+                        <img src="./img/feedback1.svg">
+                        <div class="feedback__info-title">Garden Care</div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                    <div class="feedback__info">
+                        <img src="./img/feedback2.svg">
+                        <div class="feedback__info-title">Plant Renovation</div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                    <div class="feedback__info">
+                        <img src="./img/feedback3.svg">
+                        <div class="feedback__info-title">Watering Graden</div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                </div>
+                <form class="feedback__form">
+                    <div class="feedback__form-title">
+                        Would you like to join newsletters?
+                    </div>
+                    <div class="feedback__formWrapper">
+                        <input type="email" placeholder="enter your email address...">
+                        <div class="btn">Join</div>
+                    </div>
+                    <p>
+                        We usually post offers and challenges in newsletter. We’re your online 
+                        houseplant destination. We offer a wide range of houseplants and accessories 
+                        shipped directly from our (green)house to yours! 
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <img src="./img/Logo.svg" class="logo">
+                    <div class="footer__top-item">
+                        <img src="./img/icon/svg/Location.svg">
+                        <p>
+                            70 West Buckingham Ave. Farmingdale, NY 11735
+                        </p>
+                    </div>
+                    <a href="mailto: contact@greenshop.com" class="footer__top-item">
+                        <img src="./img/icon/svg/Mail.svg">
+                        <p>
+                            contact@greenshop.com
+                        </p>
+                    </a>
+                    <a href="tel: +88 01911 717 490" class="footer__top-item">
+                        <img src="./img/icon/svg/Calling.svg">
+                        <p>
+                            +88 01911 717 490
+                        </p>
+                    </a>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottomWrapper">
+                        <div class="footer__bottomItem">
+                            <div class="footer__bottomItem-title">My Account</div>
+                            <a href="#">My Account</a>
+                            <a href="#">Our stores</a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Career</a>
+                            <a href="#">Specials</a>
+                        </div>
+                        <div class="footer__bottomItem">
+                            <div class="footer__bottomItem-title">Help & Guide</div>
+                            <a href="#">Help Center</a>
+                            <a href="#">How to Buy</a>
+                            <a href="#">Shipping & Delivery</a>
+                            <a href="#">Product Policy</a>
+                            <a href="#">How to Return</a>
+                        </div>
+                        <div class="footer__bottomItem">
+                            <div class="footer__bottomItem-title">Categories</div>
+                            <a href="#">House Plants</a>
+                            <a href="#">Potter Plants</a>
+                            <a href="#">Seeds</a>
+                            <a href="#">Small Plants</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                    </div>
+                    <div class="footer__bottomItem">
+                        <div class="footer__bottomItem-title">Social Media</div>
+                        <div class="footer__socials">
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Facebook"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Instagram"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Twitter"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Linkedin"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Union"></div>
+                            </a>
+                        </div>
+                        <div class="footer__bottomItem-title">We accept</div>
+                        <div class="footer__pay">
+                            <img src="./img/pay.png" alt="" class="footer__pay-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="./plugins/wNumb/wNumb.min.js"></script>
+    <script src="./plugins/noUiSlider/nouislider.min.js"></script>
+    <script src="./plugins/fancybox/fancybox.umd.js"></script>
+    <script src="./plugins/select2/select2.full.min.js"></script>
+    <script src="./plugins/mask/imask.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

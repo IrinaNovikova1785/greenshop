@@ -9,8 +9,14 @@
     width: fit-content;
     border-radius: 6px;
     padding: 5px 20px;
+    border: 1px solid transparent;
     img{
         object-fit: contain;
         height: 20px;
+    }
+    &--transp{
+        background-color: transparent;
+        border-color: $mainColor;
+        color: $mainColor;
     }
 }
