@@ -49,12 +49,14 @@
         margin-top: 15px;
         label{
             position: relative;
+            display: block;
+            width: 100%;
             margin-bottom: 15px;
             input{
                 border: 1px solid #EAEAEA;
                 border-radius: 5px;
                 padding: 12px 15px;
-                width: auto;
+                width: 100%;
             }
             .passHide{
                 position: absolute;

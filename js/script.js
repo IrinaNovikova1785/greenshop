@@ -213,14 +213,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
   $(document).ready(function() {
-    $('.townSelect').select2({
-      placeholder: 'Select a country / region',
-    });
-  });
-  $(document).ready(function() {
-    $('.stateSelect').select2({
-      placeholder: 'Select a state',
-    });
+    if(document.querySelector('.townSelect')){
+      $('.townSelect').select2({
+        placeholder: 'Select a country / region',
+      });
+    }
+    if(document.querySelector('.stateSelect')){
+      $('.stateSelect').select2({
+        placeholder: 'Select a state',
+      });
+    }
   });
 
 
