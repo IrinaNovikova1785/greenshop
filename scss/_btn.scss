@@ -10,9 +10,20 @@
     border-radius: 6px;
     padding: 5px 20px;
     border: 1px solid transparent;
+    transition: .38s ease-in-out;
+    cursor: pointer;
     img{
         object-fit: contain;
         height: 20px;
+        transition: .38s ease-in-out;
+    }
+    &:hover{
+        background-color: #FFF;
+        border-color: $mainColor;
+        color: $mainColor;
+        img{
+            filter: brightness(0) saturate(100%) invert(55%) sepia(33%) saturate(689%) hue-rotate(80deg) brightness(92%) contrast(93%);
+        }
     }
     &--transp{
         background-color: transparent;

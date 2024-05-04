@@ -53,6 +53,18 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
 
+    Fancybox.bind("[data-fancybox]", {
+    })
+
+    let modTitle = document.querySelectorAll('.modal__title>a');
+
+    if(modTitle){
+      modTitle.forEach((link) => {
+        link.addEventListener('click', () =>{
+          Fancybox.close();
+        })
+      })
+    }
     let arrGallery = ['.cardDetail__swiperSlide'];
 
     function initGallery(){
