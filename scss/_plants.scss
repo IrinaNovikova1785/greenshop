@@ -21,6 +21,7 @@
             display: flex;
             flex-wrap: wrap;
             width: 75%;
+            height: fit-content;
             .card{
                 @include fluid(margin-bottom, 30px, 50px);
                 width: 30.4%;

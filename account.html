@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./plugins/noUiSlider/nouislider.min.css">
+    <link rel="stylesheet" href="./plugins/fancybox/fancybox.css">
+    <link rel="stylesheet" href="./plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="./fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Acc</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <img src="./img/Logo.svg" class="logo">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">Shop</a></li>
+                        <li><a href="#">Plant Care</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </nav>
+                <div class="header__tools">
+                    <a href="#" class="icon icon-find"></a>
+                    <a href="#" class="header__tools-basketWrap">
+                        <div class="icon icon-basket"></div>
+                        <span>6</span>
+                    </a>
+                    <a href="#log" class="btn" data-fancybox>
+                        <img src="./img/icon/svg/Logout.svg">
+                        <p>Login</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__wrapper">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Checkout</a>
+            </div>
+        </div>
+    </section>
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout__wrapper">
+                <div class="checkoutAcc">
+                    <div class="checkoutAcc__title subtitle">My Account</div>
+                    <a href="#" class="checkoutAcc__item active">
+                        <img src="./img/icon/svg/userMobile.svg" alt="">
+                        <p>Account Details</p>
+                    </a>
+                    <a href="#" class="checkoutAcc__item">
+                        <img src="./img/icon/svg/basket.svg" alt="">
+                        <p>Orders</p>
+                    </a>
+                    <a href="#" class="checkoutAcc__item">
+                        <img src="./img/icon/svg/like.svg" alt="">
+                        <p>Wishlist</p>
+                    </a>
+                    <a href="#" class="checkoutAcc__item exit">
+                        <img src="./img/icon/svg/Logout.svg" alt="">
+                        <p>Loguot</p>
+                    </a>
+                </div>
+                <!-- личные данные -->
+                <!-- <div class="checkout__address">
+                    <div class="checkout__title">Personal Information</div>
+                    <form class="checkout__form">
+                        <label>
+                            <p>First Name <b>*</b></p>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <p>Last Name <b>*</b></p>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <p>Email address<b>*</b></p>
+                            <input type="email">
+                        </label>
+                        <label>
+                            <p>Phone Number <b>*</b></p>
+                            <input type="text" name="phone" placeholder="+7 (901)-222-22-22">
+                        </label>
+                        <label>
+                            <p>Username<b>*</b></p>
+                            <input type="text">
+                        </label>
+                        <label>
+                            <p>
+                                Photo
+                            </p>
+                            <input type="file">
+                            <div class="customInputFile">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Iconly/Curved/Image 2">
+                                    <g id="Image 2">
+                                    <path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M2.75 12C2.75 18.937 5.063 21.25 12 21.25C18.937 21.25 21.25 18.937 21.25 12C21.25 5.063 18.937 2.75 12 2.75C5.063 2.75 2.75 5.063 2.75 12Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path id="Stroke 3" fill-rule="evenodd" clip-rule="evenodd" d="M10.5987 8.78419C10.5987 9.75719 9.81066 10.5452 8.83766 10.5452C7.86566 10.5452 7.07666 9.75719 7.07666 8.78419C7.07666 7.81119 7.86566 7.02319 8.83766 7.02319C9.81066 7.02319 10.5987 7.81119 10.5987 8.78419Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path id="Stroke 5" d="M21.1203 14.6664C20.2393 13.7604 18.9933 11.9294 16.7043 11.9294C14.4153 11.9294 14.3653 15.9674 12.0293 15.9674C9.69231 15.9674 8.75131 14.5964 7.22831 15.3124C5.70631 16.0274 4.46631 18.8734 4.46631 18.8734" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    </g>
+                                </svg>                                    
+                            </div>
+                            <a href="#" class="btn">Change</a>
+                            <a href="#" class="btn btn--transp">Remove</a>
+                        </label>
+                        <div class="checkout__formWrap">
+                            <div class="checkout__title">Password change</div>
+                            <label>
+                                <p>Current password</p>
+                                <input type="password">
+                            </label>
+                            <label>
+                                <p>New password</p>
+                                <input type="password">
+                            </label>
+                            <label>
+                                <p>Confirm new password</p>
+                                <input type="password">
+                            </label>
+                            <button class="btn">Save Change</button>
+                        </div>
+                    </form>
+                </div> -->
+                <!-- Wishlist -->
+                <!-- <div class="checkout__address">
+                    <div class="checkout__title">Wishlist</div>
+                    <div class="plants">
+                        <div class="plants__cardWrapper">
+                            <a href="#" class="card">
+                                <div class="card__img">
+                                    <img src="./img/pl1.png" class="card__img-plant">
+                                </div>
+                                <div class="card__title">Barberton Daisy</div>
+                                <div class="card__price">$119.00</div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card__img">
+                                    <img src="./img/pl2.png" class="card__img-plant">
+                                </div>
+                                <div class="card__title">Barberton Daisy</div>
+                                <div class="card__price">$119.00</div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card__img">
+                                    <span>13% OFF</span>
+                                    <img src="./img/pl3.png" class="card__img-plant">
+                                </div>
+                                <div class="card__title">Barberton Daisy</div>
+                                <div class="card__price">$119.00</div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card__img">
+                                    <img src="./img/pl1.png" class="card__img-plant">
+                                </div>
+                                <div class="card__title">Barberton Daisy</div>
+                                <div class="card__price">$119.00</div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card__img">
+                                    <img src="./img/pl2.png" class="card__img-plant">
+                                </div>
+                                <div class="card__title">Barberton Daisy</div>
+                                <div class="card__price">$119.00</div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card__img">
+                                    <span>13% OFF</span>
+                                    <img src="./img/pl3.png" class="card__img-plant">
+                                </div>
+                                <div class="card__title">Barberton Daisy</div>
+                                <div class="card__price">$119.00</div>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="checkout__address">
+                    <div class="checkout__title">Wishlist</div>
+                    <div class="account">
+                        <div class="account__user display opacity orederAll" >
+                            <div class="account__user-flex">
+                                <div class="subtitle">Заказы</div>
+                                <div class="account__userInfo-links">
+                                    <div id="cancell" class="btn btn--whGrB">В работе</div>
+                                    <div id="save" class="btn">Все заказы</div>
+                                </div>
+                            </div>
+                            <div class="account__table">
+                                <table class="table table--account">
+                                    <thead>
+                                        <tr>
+                                            <th>N</th>
+                                            <th>
+                                                Дата
+                                            </th>
+                                            <th>
+                                                Получатель
+                                            </th>
+                                            <th>Сумма</th>
+                                            <th>Скидка 1%</th>
+                                            <th>Состояние</th>
+                                            <th>Статус</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-idorder="1">
+                                                117157
+                                            </td>
+                                            <td>01.12.2023  11:17</td>
+                                            <td>
+                                                ИП Бикбулатов Ержан
+                                            </td>
+                                            <td>224 000,00 ₽</td>
+                                            <td>224 ₽</td>
+                                            <td>Установленная дата закрытия</td>
+                                            <td>
+                                                <div class="status">Отгружен</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-idorder="2">
+                                                117157
+                                            </td>
+                                            <td>01.12.2023  11:17</td>
+                                            <td>
+                                                ИП Бикбулатов Ержан
+                                            </td>
+                                            <td>224 000,00 ₽</td>
+                                            <td>224 ₽</td>
+                                            <td>Установленная дата закрытия</td>
+                                            <td>
+                                                <div class="status">Отгружен</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-idorder="3">
+                                                117157
+                                            </td>
+                                            <td>01.12.2023  11:17</td>
+                                            <td>
+                                                ИП Бикбулатов Ержан
+                                            </td>
+                                            <td>224 000,00 ₽</td>
+                                            <td>224 ₽</td>
+                                            <td>Установленная дата закрытия</td>
+                                            <td>
+                                                <div class="status">Отгружен</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                117157
+                                            </td>
+                                            <td>01.12.2023  11:17</td>
+                                            <td>
+                                                ИП Бикбулатов Ержан
+                                            </td>
+                                            <td>224 000,00 ₽</td>
+                                            <td>224 ₽</td>
+                                            <td>Установленная дата закрытия</td>
+                                            <td>
+                                                <div class="status orange">Отгружен</div>
+                                            </td>
+                                        </tr>
+                                        <tr class="borderTR">
+                                            <td>
+                                                117157
+                                            </td>
+                                            <td>01.12.2023  11:17</td>
+                                            <td>
+                                                ИП Бикбулатов Ержан
+                                            </td>
+                                            <td>224 000,00 ₽</td>
+                                            <td>224 ₽</td>
+                                            <td>Установленная дата закрытия</td>
+                                            <td>
+                                                <div class="status blue">Отгружен</div>
+                                            </td>
+                                        </tr>
+                                        <tr style="display: none;">
+                                            <td>
+                                                117157
+                                            </td>
+                                            <td>01.12.2023  11:17</td>
+                                            <td>
+                                                ИП Бикбулатов Ержан
+                                            </td>
+                                            <td>224 000,00 ₽</td>
+                                            <td>224 ₽</td>
+                                            <td>Установленная дата закрытия</td>
+                                            <td>
+                                                <div class="status blue">Отгружен</div>
+                                            </td>
+                                        </tr>
+                                        <tr style="display: none;">
+                                            <td>
+                                                117157
+                                            </td>
+                                            <td>01.12.2023  11:17</td>
+                                            <td>
+                                                ИП Бикбулатов Ержан
+                                            </td>
+                                            <td>224 000,00 ₽</td>
+                                            <td>224 ₽</td>
+                                            <td>Установленная дата закрытия</td>
+                                            <td>
+                                                <div class="status">Отгружен</div>
+                                            </td>
+                                        </tr>
+                                        <tr style="display: none;">
+                                            <td>
+                                                117157
+                                            </td>
+                                            <td>01.12.2023  11:17</td>
+                                            <td>
+                                                ИП Бикбулатов Ержан
+                                            </td>
+                                            <td>224 000,00 ₽</td>
+                                            <td>224 ₽</td>
+                                            <td>Установленная дата закрытия</td>
+                                            <td>
+                                                <div class="status">Отгружен</div>
+                                            </td>
+                                        </tr>
+                                        <tr style="display: none;">
+                                            <td>
+                                                117157
+                                            </td>
+                                            <td>01.12.2023  11:17</td>
+                                            <td>
+                                                ИП Бикбулатов Ержан
+                                            </td>
+                                            <td>224 000,00 ₽</td>
+                                            <td>224 ₽</td>
+                                            <td>Установленная дата закрытия</td>
+                                            <td>
+                                                <div class="status orange">Отгружен</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="showMore" class="btn btn--whGrB">Показать еще</div>
+                        </div>
+                        <div class="account__user" data-idorderinfo="1">
+                            <a href="#" class="account__user-again backOr">К списку заказов</a>
+                            <div class="subtitle">Заказ №1</div>
+                            <div class="account__user-flex">
+                                <div class="status orange">Заказ продлен</div>
+                                <a href="#" class="account__user-again">Повторить заказ</a>
+                            </div>
+                            <div class="account__user-flex">
+                                <div class="account__order">
+                                    <div class="account__order-item">
+                                        <div class="account__order-itemLeft">Заказчик:</div>
+                                        <div class="account__order-itemRight">ИП Бикбулатов Ержан Идрисович</div>
+                                    </div>
+                                    <div class="account__order-item">
+                                        <div class="account__order-itemLeft">Менеджер:</div>
+                                        <div class="account__order-itemRight">Сытник Владимир Георгиевич</div>
+                                    </div>
+                                    <div class="account__order-item">
+                                        <div class="account__order-itemLeft">Дата оформления:</div>
+                                        <div class="account__order-itemRight">01.12.2023, 11:17</div>
+                                    </div>
+                                    <div class="account__subtitle">Доставка и оплата</div>
+                                    <div class="account__order-item">
+                                        <div class="account__order-itemLeft">Способ оплаты:</div>
+                                        <div class="account__order-itemRight">Картой при оформлении</div>
+                                    </div>
+                                    <div class="account__order-item">
+                                        <div class="account__order-itemLeft">Оплачено:</div>
+                                        <div class="account__order-itemRight"><b>224 000 ₽</b></div>
+                                    </div>
+                                    <div class="account__order-item">
+                                        <div class="account__order-itemLeft">Способ доставки:</div>
+                                        <div class="account__order-itemRight">Доставка транспортной компанией</div>
+                                    </div>
+                                    <div class="account__order-item">
+                                        <div class="account__order-itemLeft">Адрес:</div>
+                                        <div class="account__order-itemRight">г. Саратов, ул. Б. Казачья, д. 18</div>
+                                    </div>
+                                </div>
+                                <div class="account__documents">
+                                    <div class="account__subtitle">Документы по заказу</div>
+                                    <a href="#" class="account__documents-item" download="">
+                                        <div class="icon icon-download"></div>
+                                        <p>Счет на оплату.pdf</p>
+                                    </a>
+                                    <a href="#" class="account__documents-item" download="">
+                                        <div class="icon icon-download"></div>
+                                        <p>Коммерческое предложение.doc</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="account__table">
+                                <table class="table table--account table--account8">
+                                    <thead>
+                                        <tr>
+                                            <th>Код</th>
+                                            <th>
+                                                Товар
+                                            </th>
+                                            <th>
+                                                Кол-во
+                                            </th>
+                                            <th>Цена</th>
+                                            <th>НДС</th>
+                                            <th>Скидка</th>
+                                            <th>Итого</th>
+                                            <th>Статус</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                62150
+                                            </td>
+                                            <td>Кофемолка F64 E Black</td>
+                                            <td>
+                                                4 шт
+                                            </td>
+                                            <td>56 000</td>
+                                            <td>37 333,33 <span>20%</span></td>
+                                            <td>0</td>
+                                            <td>224 000</td>
+                                            <td>
+                                                Зарезервирован полностью
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__wrapper">
+                <div class="feedback__infoWrapper">
+                    <div class="feedback__info">
+                        <img src="./img/feedback1.svg">
+                        <div class="feedback__info-title">Garden Care</div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                    <div class="feedback__info">
+                        <img src="./img/feedback2.svg">
+                        <div class="feedback__info-title">Plant Renovation</div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                    <div class="feedback__info">
+                        <img src="./img/feedback3.svg">
+                        <div class="feedback__info-title">Watering Graden</div>
+                        <p>
+                            We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                </div>
+                <form class="feedback__form">
+                    <div class="feedback__form-title">
+                        Would you like to join newsletters?
+                    </div>
+                    <div class="feedback__formWrapper">
+                        <input type="email" placeholder="enter your email address...">
+                        <div class="btn">Join</div>
+                    </div>
+                    <p>
+                        We usually post offers and challenges in newsletter. We’re your online 
+                        houseplant destination. We offer a wide range of houseplants and accessories 
+                        shipped directly from our (green)house to yours! 
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <img src="./img/Logo.svg" class="logo">
+                    <div class="footer__top-item">
+                        <img src="./img/icon/svg/Location.svg">
+                        <p>
+                            70 West Buckingham Ave. Farmingdale, NY 11735
+                        </p>
+                    </div>
+                    <a href="mailto: contact@greenshop.com" class="footer__top-item">
+                        <img src="./img/icon/svg/Mail.svg">
+                        <p>
+                            contact@greenshop.com
+                        </p>
+                    </a>
+                    <a href="tel: +88 01911 717 490" class="footer__top-item">
+                        <img src="./img/icon/svg/Calling.svg">
+                        <p>
+                            +88 01911 717 490
+                        </p>
+                    </a>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottomWrapper">
+                        <div class="footer__bottomItem">
+                            <div class="footer__bottomItem-title">My Account</div>
+                            <a href="#">My Account</a>
+                            <a href="#">Our stores</a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Career</a>
+                            <a href="#">Specials</a>
+                        </div>
+                        <div class="footer__bottomItem">
+                            <div class="footer__bottomItem-title">Help & Guide</div>
+                            <a href="#">Help Center</a>
+                            <a href="#">How to Buy</a>
+                            <a href="#">Shipping & Delivery</a>
+                            <a href="#">Product Policy</a>
+                            <a href="#">How to Return</a>
+                        </div>
+                        <div class="footer__bottomItem">
+                            <div class="footer__bottomItem-title">Categories</div>
+                            <a href="#">House Plants</a>
+                            <a href="#">Potter Plants</a>
+                            <a href="#">Seeds</a>
+                            <a href="#">Small Plants</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                    </div>
+                    <div class="footer__bottomItem">
+                        <div class="footer__bottomItem-title">Social Media</div>
+                        <div class="footer__socials">
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Facebook"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Instagram"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Twitter"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Linkedin"></div>
+                            </a>
+                            <a href="#" class="footer__socials-item">
+                                <div class="icon icon-Union"></div>
+                            </a>
+                        </div>
+                        <div class="footer__bottomItem-title">We accept</div>
+                        <div class="footer__pay">
+                            <img src="./img/pay.png" alt="" class="footer__pay-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="log">
+        <div class="modal__title">
+            <a href="#log" class="active" data-fancybox>Login</a>
+            <a href="#reg" data-fancybox>Register</a>
+        </div>
+        <div class="modal__text">Enter your username and password to login.</div>
+        <form class="modal__form">
+            <label>
+                <input type="email" placeholder="almamun_uxui@outlook.com">
+            </label>
+            <label>
+                <input type="password" placeholder="Password">
+                <div class="passHide">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.34984 14.7748C3.4915 13.5582 2.2915 11.7248 2.2915 10.1165C2.2915 7.38316 5.7415 4.03316 9.99984 4.03316C11.7415 4.03316 13.3582 4.59149 14.6582 5.45816" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5414 7.17517C17.2839 8.11684 17.7164 9.1585 17.7164 10.1168C17.7164 12.8502 14.2581 16.2002 9.99977 16.2002C9.24144 16.2002 8.50061 16.0918 7.80811 15.9002" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.13804 11.9725C7.6422 11.4817 7.3647 10.8125 7.3672 10.115C7.36387 8.66083 8.54054 7.47916 9.99554 7.47666C10.6955 7.47499 11.3672 7.75249 11.8622 8.24749" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.5912 10.5826C12.3962 11.6592 11.5537 12.5034 10.4771 12.7009" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5762 3.54158L3.43115 16.6866" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </label>
+            <a href="#">Forgot Password?</a>
+            <button class="btn">Login</button>
+        </form>
+        <div class="modal__afBef">
+            <p>Or login with</p>
+        </div>
+        <a href="#" class="modal__logWith">
+            <img src="./img/Google.svg" alt="">
+            <p>Login with Google</p>
+        </a>
+        <a href="#" class="modal__logWith">
+            <img src="./img/facebook.svg" alt="">
+            <p>Login with Facebook</p>
+        </a>
+    </div>
+
+    <div class="modal" id="reg">
+        <div class="modal__title">
+            <a href="#log" data-fancybox>Login</a>
+            <a href="#reg" class="active" data-fancybox>Register</a>
+        </div>
+        <div class="modal__text">Enter your username and password to login.</div>
+        <form class="modal__form">
+            <label>
+                <input type="text" placeholder="Username">
+            </label>
+            <label>
+                <input type="email" placeholder="almamun_uxui@outlook.com">
+            </label>
+            <label>
+                <input type="password" placeholder="Password">
+                <div class="passHide">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.34984 14.7748C3.4915 13.5582 2.2915 11.7248 2.2915 10.1165C2.2915 7.38316 5.7415 4.03316 9.99984 4.03316C11.7415 4.03316 13.3582 4.59149 14.6582 5.45816" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5414 7.17517C17.2839 8.11684 17.7164 9.1585 17.7164 10.1168C17.7164 12.8502 14.2581 16.2002 9.99977 16.2002C9.24144 16.2002 8.50061 16.0918 7.80811 15.9002" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.13804 11.9725C7.6422 11.4817 7.3647 10.8125 7.3672 10.115C7.36387 8.66083 8.54054 7.47916 9.99554 7.47666C10.6955 7.47499 11.3672 7.75249 11.8622 8.24749" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.5912 10.5826C12.3962 11.6592 11.5537 12.5034 10.4771 12.7009" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5762 3.54158L3.43115 16.6866" stroke="#727272" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </label>
+            <label>
+                <input type="password" placeholder="Confirm Password">
+            </label>
+            <a href="#">Forgot Password?</a>
+            <button class="btn">Register</button>
+        </form>
+        <div class="modal__afBef">
+            <p>Or Register with</p>
+        </div>
+        <a href="#" class="modal__logWith">
+            <img src="./img/Google.svg" alt="">
+            <p>Login with Google</p>
+        </a>
+        <a href="#" class="modal__logWith">
+            <img src="./img/facebook.svg" alt="">
+            <p>Login with Facebook</p>
+        </a>
+    </div>
+    <script src="./plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="./plugins/wNumb/wNumb.min.js"></script>
+    <script src="./plugins/noUiSlider/nouislider.min.js"></script>
+    <script src="./plugins/fancybox/fancybox.umd.js"></script>
+    <script src="./plugins/select2/select2.full.min.js"></script>
+    <script src="./plugins/mask/imask.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        let accountUser =  document.querySelector(".account__user");
+
+        if (accountUser) {
+            let targetMap = document.querySelectorAll('[data-acc]'),
+            map = document.querySelectorAll('.account__user');
+            targetMap?.forEach((elem) => {
+            elem.addEventListener('click', function (e) {
+                e.preventDefault()
+                let target = this.getAttribute('data-acc')
+                map.forEach((elem) => {
+                elem.classList.remove('opacity', 'display')
+                })
+                targetMap.forEach((elem) => {
+                    elem.classList.remove('active');
+                })
+                this.classList.add('active');
+                let cat = document.querySelector('[data-accInfo ="' + target + '"]')
+                cat.classList.add('display')
+                setTimeout(() => {
+                cat.classList.add('opacity')
+                }, 400)
+            })
+            })
+
+            let targetMap1 = document.querySelectorAll('[data-idOrder]'),
+            map1 = document.querySelectorAll('.account__user');
+            targetMap1?.forEach((elem) => {
+            elem.addEventListener('click', function (e) {
+                e.preventDefault()
+                let target = this.getAttribute('data-idOrder')
+                map1.forEach((elem1) => {
+                elem1.classList.remove('opacity', 'display')
+
+                $(elem1).find('.backOr').click(() => {
+                    $(elem1).removeClass('opacity display');
+                    $('.orederAll').addClass('display')
+                    setTimeout(() => {
+                    $('.orederAll').addClass('opacity')
+                    }, 400)
+                })
+                })
+            
+                let cat = document.querySelector('[data-idOrderInfo ="' + target + '"]')
+                cat.classList.add('display')
+                setTimeout(() => {
+                cat.classList.add('opacity')
+                }, 400)
+
+            })
+            })
+        }
+
+        let tableAccount = document.querySelector('.table--account');
+        let showMore = document.getElementById('showMore');
+
+        if(tableAccount){
+        $(tableAccount).find('tbody>tr').slice(5).hide();
+        $(tableAccount).find('tbody>tr:nth-child(5)').addClass('borderTR');
+
+
+        if($(tableAccount).find('tbody>tr').length <= 5) {
+            $(showMore).hide();
+        } else {
+            $(showMore).show();
+        }
+        
+        showMore.addEventListener('click',() => {
+            let hidden =  $(tableAccount).find('tbody>tr:hidden');
+            $(tableAccount).find('tbody>tr:nth-child(5)').removeClass('borderTR');
+
+            if(hidden.length > 0) {
+            // hidden.slice(0, 2).slideDown();
+            $(showMore).html('Скрыть');
+            hidden.slice(0).slideDown();
+            } else {
+            $(tableAccount).find('tbody>tr:nth-child(5)').addClass('borderTR');
+            $(showMore).html('Показать еще');
+            $(tableAccount).find('tbody>tr').slice(5).slideUp();
+            }
+
+        });
+        }
+    </script>
+</body>
+</html> 

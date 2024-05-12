@@ -48,13 +48,17 @@
                     color: #FFF;
                     border-radius: 50%;
                     background-color: $mainColor;
-                    width: 21px;
+                    width: 25px;
                     height: 25px;
+                    cursor: pointer;
                 }
             }
             &-total{
                 font-weight: 700;
                 color: $mainColor;
+            }
+            svg {
+                cursor: pointer;
             }
         }
     }

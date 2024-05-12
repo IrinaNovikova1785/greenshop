@@ -1,0 +1,226 @@
+.table{
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    // thead, tr:has(th){
+    thead{
+        display: flex;
+        border-radius: 30px 30px 0px 0px;
+        background: #EBF0F5;
+        padding: 20px 20px 10px 20px;
+        tr{
+            display: flex;
+            width: 100%;
+            gap: 20px;
+            justify-content: space-between;
+            th{
+                @include fluid(font-size, 14px, 16px);
+                font-weight: 500;
+                line-height: 137.5%;
+                p{
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    tr:has(td){
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #FFF;
+        &:last-child{
+            border-radius: 0px 0px 30px 30px;
+        }
+        td{
+            @include fluid(font-size, 12px, 14px);
+            line-height: 157.143%;
+        }
+    }
+    td, th{
+        display: flex;
+        text-align: left;
+        // align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        &:first-child{
+            // width: 200px;
+            width: 19%;
+        }
+        &:nth-child(2){
+            // width: 180px;
+            width: 17%;
+        }
+        &:nth-child(3){
+            width: 18%;
+        }
+        &:nth-child(4), &:nth-child(5){
+            width: 14%;
+        }
+    }
+    td{
+        .arr{
+            transition: .38s ease-in-out;
+        }
+        &:has(.icon){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            cursor: pointer;
+            &:hover{
+                .arr{
+                    rotate: -90deg;
+                }
+                .hiddenDoc{
+                    display: block;
+                }
+            }
+        }
+        &:has(.hiddenDoc){
+            position: relative;
+        }
+        .doc{
+            &::before{
+                font-size: 19px;
+            }
+        }
+        .arr{
+            rotate: 90deg;
+            &::before{
+                font-size: 25px;
+            }
+        }
+    }
+    &--account{
+        border: 1px solid #ebf0f5;
+        border-radius: 20px;
+        border-spacing: 0;
+        margin-bottom: 0;
+        thead{
+            padding: 14px 10px;
+            border-radius: 20px 20px 0 0;
+            tr{
+                gap: 0;
+                th{
+                    font-size: 12px;
+                }
+            } 
+        }
+        tbody{
+            tr{
+                &:not(&:last-child){
+                    border-bottom: 1px solid #ebf0f5;
+                }
+                &.borderTR{
+                    border-right: 1px solid #ebf0f5;
+                    border-left: 0.5px solid #ebf0f5;
+                    border-radius: 0 0 20px 20px;
+                }
+            }
+        }
+        th{
+            justify-content: center;
+        }
+        td, th{
+            &:first-child{
+                // width: 7%;
+                width: 5.46%;
+            }
+            &:nth-child(2){
+                // width: 12%;
+                width: 11.68%;
+            }
+            &:nth-child(3){
+                // width: 16%;
+                width: 15.74%;
+            }
+            &:nth-child(4){
+                // width: 18%;
+                width: 12.02%;
+            }
+            &:nth-child(5){
+                // width: 14%;
+                width: 9.18%;
+            }
+            &:nth-last-child(2){
+                // width: 19%;
+                width: 11.48%;
+            }
+            &:nth-last-child(3){
+                // width: 11%;
+                width: 9.93%;
+            }
+            &:nth-last-child(4){
+                // width: 11%;
+                width: 11.15%;
+            }
+            &:last-child{
+                // width: 10%;
+                width: 12.02%;
+            }
+        }
+        tr:has(td){
+            padding: 7px 10px;
+            td{
+                font-size: 12px;
+                color: #273137;
+                span{
+                    color: #8596A0;
+                }
+            }
+        }
+
+        &8{
+            td, th{
+                &:first-child{
+                    // width: 7%;
+                    width: 6.56%;
+                }
+                &:nth-child(2){
+                    // width: 12%;
+                    width: 24.04%;
+                }
+                &:nth-child(3){
+                    // width: 16%;
+                    width: 6.56%;
+                }
+                &:nth-child(4){
+                    // width: 18%;
+                    width: 8.74%;
+                }
+                &:nth-child(5), &:nth-last-child(3), &:nth-last-child(2){
+                    // width: 14%;
+                    width: 8.74%;
+                }
+                &:last-child{
+                    // width: 10%;
+                    width: 15.85%;
+                }
+            }
+        }
+    }
+}
+[data-idorder]{
+    cursor: pointer;
+}
+@media (max-width: 1260px) {
+    .table{
+        &--account{
+            width: 861px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .table{
+        width: 686px;
+        &--account{
+            width: 861px;
+        }
+        td:has(.icon):focus .hiddenDoc{
+            display: block;
+        }
+    }
+}

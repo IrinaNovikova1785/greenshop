@@ -125,8 +125,9 @@
                 color: #FFF;
                 border-radius: 50%;
                 background-color: $mainColor;
-                width: 33px;
+                width: 38px;
                 height: 38px;
+                cursor: pointer;
             }
         }
         .btn:has(.icon){
